@@ -2,16 +2,38 @@ let result
 let fnumber
 let snumber
 let text = document.getElementById('app')
-let formbox = document.getElementById('form')
-let inputbox = document.getElementById('input').value
-let btnsubmit = document.getElementById('submit')
-switch (inputbox) {
-    case 1: function addition (){
-        fnumber = prompt('Please enter the first number')
-        snumber = prompt('Please enter the first number')
-        return result = fnumber + snumber;}
+let popup = parseInt(prompt("Enter a Number"))
+switch (popup) {
+    case 1: function operation (){
+        fnumber = parseInt(prompt('Please enter the first number'))
+        snumber = parseInt(prompt('Please enter the second number'))
+        result = fnumber + snumber;
+        return result;
+        }
+        break;
+    
+    case 2: function operation (){
+        fnumber = parseInt(prompt('Please enter the first number'))
+        snumber = parseInt(prompt('Please enter the second number'))
+        result = fnumber - snumber;
+        }
         break;
 
+    case 3: function operation (){
+        fnumber = parseInt(prompt('Please enter the first number'))
+        snumber = parseInt(prompt('Please enter the second number'))
+        result = fnumber * snumber;
+        }
+        break;
+
+    case 4: function operation (){
+        fnumber = parseInt(prompt('Please enter the first number'))
+        snumber = parseInt(prompt('Please enter the second number'))
+        result = fnumber / snumber;
+        }
+        break;
     default:
         break;
 }
+operation();
+console.log(result)
