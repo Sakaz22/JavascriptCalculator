@@ -12,7 +12,7 @@
 </head>
 <body>
     <div id="app">
-        <h1 class="text-bg-primary text-center">Hello, welcome to my calculator</h1>
+        <h1 class="text-bg-primary text-center shadow p-3">Hello, welcome to my calculator</h1>
         <h2 class="text-center">Please select an operator</h2>
         <ol>
             <li>Addition</li>
@@ -22,8 +22,24 @@
             <li>Modulus</li>
         </ol>
         <div class="text-center">
-        <button id="startFtn">Let's start</button>
+            <button id="startFtn" class="btn btn-primary btn-lg">Let's start</button>
+        </div>
     </div>
+    <div>
+        <p class="text-center p-5 fs-1" id="output"></p>
+    </div>
+    <div class="container">
+        <div class="text-end">Output</div>
+        <div class="d-flex container-lg">
+            <div class="bg-primary">
+                <p>AC</p>
+                <p>DEL</p>
+            </div>
+            <div class="d-flex flex-row">
+                <p class="align-middle">7</p>
+                <p>/</p>
+            </div>
+        </div>
     </div>
     <script src="app.js"></script>
 </body>
