@@ -46,23 +46,38 @@ switch (popup) {
 }
 
 // The numbers
-let one = document.getElementById("one");
-let two = document.getElementById("two");
-let three = document.getElementById("three");
-let four = document.getElementById("four");
-let five = document.getElementById("five");
-let six = document.getElementById("six");
-let seven = document.getElementById("seven");
-let eight = document.getElementById("eight");
-let nine = document.getElementById("nine");
-let zero = document.getElementById("zero");
-let dot = document.getElementById("dot");
-let add = document.getElementById("add");
-let subtract = document.getElementById("subtract");
-let divide = document.getElementById("divide");
-let multiply = document.getElementById("multiply");
-let equals = document.getElementById("equals");
+const one = document.getElementById("one").textContent;
+const two = document.getElementById("two").textContent;
+const three = document.getElementById("three").textContent;
+const four = document.getElementById("four").textContent;
+const five = document.getElementById("five").textContent;
+const six = document.getElementById("six").textContent;
+const seven = document.getElementById("seven").textContent;
+const eight = document.getElementById("eight").textContent;
+const nine = document.getElementById("nine").textContent;
+const zero = document.getElementById("zero").textContent;
+const dot = document.getElementById("dot").textContent;
+const add = document.getElementById("add").textContent;
+const subtract = document.getElementById("subtract").textContent;
+const divide = document.getElementById("divide").textContent;
+const multiply = document.getElementById("multiply").textContent;
+const equals = document.getElementById("equals").textContent;
+//Combines all numbers into a single array
+const numbers = [parseInt(one,two,three,four,five,six,seven,eight,nine,zero)]
 
-let numbers = [one,two,three,four,five,six,seven,eight,nine,zero]
+const operators = [add,subtract,divide,multiply,equals]
 
-console.log(numbers)
+console.log(numbers[0])
+console.log(operators[0])
+
+//Displaying the output
+const calcdisplay = document.getElementById("output");
+
+function print(){
+    if(one == 1){
+        calcdisplay.innerHTML = 1;
+    }
+    else if(two == 2){
+        calcdisplay.innerHTML = 2;
+    }
+}
